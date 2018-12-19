@@ -22,9 +22,9 @@ namespace Yobit
         private readonly string ApiSecret;
         private byte[] ApiSecretBytes { get { return Encoding.UTF8.GetBytes(ApiSecret); } }
         private readonly bool IgnoreInvalidPairs;
-        public static string PublicApiUrl = "https://yobit.net/api/3";
+        public static string PublicApiUrl = "https://yobit.io/api/3";
         public static Uri PublicApiUri = new Uri(PublicApiUrl);
-        public static string TradeApiUrl = "https://yobit.net/tapi";
+        public static string TradeApiUrl = "https://yobit.io/tapi";
         public static Uri TradeApiUri = new Uri(TradeApiUrl);
 
         public YobitApiClient(string key, string secret, IYobitClientLogger logger, bool ignoreInvalidPairs = true)
